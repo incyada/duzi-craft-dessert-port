@@ -1,5 +1,3 @@
-//gonna reimplement this once i found a way to not have to specify every potion if they are not specified
-//the file has been renamed so that it wont be read
 {
   "model": {
     "type": "minecraft:select",
@@ -12,7 +10,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/weakness_potions"
+          "model": "minecraft:item/weakness_splash_potion"
         }
       },
       {
@@ -21,7 +19,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/item/weakness_potions"
+          "model": "minecraft:item/weakness_splash_potion"
         }
       },
       {
@@ -30,7 +28,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/harming_potion"
+          "model": "minecraft:item/harming_splash_potion"
         }
       },
       {
@@ -39,7 +37,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/harming_potion"
+          "model": "minecraft:item/harming_splash_potion"
         }
       },
       {
@@ -48,7 +46,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/poison_potion"
+          "model": "minecraft:item/poison_splash_potion"
         }
       },
       {
@@ -57,7 +55,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/poison_potion"
+          "model": "minecraft:item/poison_splash_potion"
         }
       },
       {
@@ -66,7 +64,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/poison_potion"
+          "model": "minecraft:item/poison_splash_potion"
         }
       },
       {
@@ -75,7 +73,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/slowness_potion"
+          "model": "minecraft:item/slowness_splash_potion"
         }
       },
       {
@@ -84,7 +82,7 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/slowness_potion"
+          "model": "minecraft:item/slowness_splash_potion"
         }
       },
       {
@@ -93,13 +91,19 @@
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "minecraft:item/slowness_potion"
+          "model": "minecraft:item/slowness_splash_potion"
         }
       }
     ],
- "fallback": {
+    "fallback": {
       "type": "minecraft:model",
-      "model": "minecraft:item/potion"
+      "model": "minecraft:item/splash_potion",
+      "tints": [
+			{
+				"type": "minecraft:potion",
+				"default": -13083194
+			  }
+		  ]
     }
-     }
+  }
 }
