@@ -76,5 +76,7 @@ skipped cat and dog renames, for now
 outlines arent a thing due to no option to have backface culling for entities in emf, or optifine
 -- well technically its possible to fake it, but the pack that managed to make it work (enchantment outlines by fishysalmon02, implementation by dbrighthd), used some maths, and even so, its buggy (outline is based on player pos, not camera pos, and doesnt play nice with hardcorded rotations)
 --- basically, id much rather have an official implementation, than have an implementation that kinda works, but not always, also shading, which could be problematic
----- ill revisit this another time though, it might be interesting 
+---- ill revisit this another time though, it might be interesting
+
+no tiny takeover (yet), the main pack hasn't been updated yet and the current models are broken on 26.1 and above
 ============================================

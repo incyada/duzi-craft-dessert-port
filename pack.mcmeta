@@ -3,5 +3,14 @@
         "min_format": 75,
         "max_format": 999,
         "description": "A better way to play Minecraft!"
-    }
+    },
+	"overlays": {
+		"entries": [
+			{
+                "directory": "babies",
+                "min_format": 75,
+                "max_format": 83
+            }
+		]
+	}
 }
