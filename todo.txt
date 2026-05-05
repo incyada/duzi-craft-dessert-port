@@ -1,9 +1,10 @@
-20. shell script to make publishing easier (removes dev files and git repo stuff for me with two clicks)
+20. try to compress songs in order to reduce pack size
+21. playtesting
+22. shell script to make publishing easier (removes dev files and git repo stuff for me with two clicks)
 -- script should go like this: copy directory, enter said directory, delete git stuff and original pack, then compress into a file with the same name as the pack
 -- not sure if there are any command to do the compression part, maybe there are some
-21. playtesting
-22. during of after that proper docs for pack contents and git repo
-23. a suprise...
+23. during of after that proper docs for pack contents and git repo
+24. a suprise...
 -- what it is will be seen eventually
-24. post release, backporting (until 1.20)
+25. post release, backporting (until 1.20)
 -- packs are starting to drop these older versions though, which does reduce the workload, but we'll see if mods gets updated to 26.1 at the very least
