@@ -1,5 +1,3 @@
-20. try to compress songs in order to reduce pack size
-21. playtesting
 22. shell script to make publishing easier (removes dev files and git repo stuff for me with two clicks)
 -- script should go like this: copy directory, enter said directory, delete git stuff and original pack, then compress into a file with the same name as the pack
 -- not sure if there are any command to do the compression part, maybe there are some

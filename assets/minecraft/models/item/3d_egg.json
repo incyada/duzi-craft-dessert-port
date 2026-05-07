@@ -1,16 +1,16 @@
 {
-	"format_version": "1.21.11",
+	"format_version": "1.9.0",
 	"credit": "Made by D°Uzi and ported by Cakeofcraft",
 	"textures": {
-		"all": "minecraft:item/projectiles/egg",
-		"particle": "minecraft:item/projectiles/egg"
+		"particle": "minecraft:item/projectiles/egg",
+		"all": "minecraft:item/projectiles/egg"
 	},
 	"elements": [
 		{
 			"name": "projectile",
 			"from": [6, -4.5, 6],
 			"to": [10, 2.5, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -1, 8]},
 			"faces": {
 				"north": {"uv": [10, 0, 15, 8], "texture": "#all"},
 				"east": {"uv": [5, 0, 10, 8], "texture": "#all"},
@@ -23,7 +23,8 @@
 	],
 	"display": {
 		"ground": {
-			"translation": [0, 11, 0]
+			"translation": [0, 8.5, 0],
+			"scale": [0.75, 0.75, 0.75]
 		}
 	},
 	"groups": [

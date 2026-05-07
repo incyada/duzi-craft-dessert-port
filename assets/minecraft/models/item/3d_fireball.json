@@ -3,8 +3,8 @@
 	"credit": "Made by D°Uzi and ported by Cakeofcraft",
 	"texture_size": [32, 32],
 	"textures": {
-		"all": "minecraft:item/projectiles/fireball",
-		"particle": "minecraft:item/projectiles/fireball"
+		"particle": "minecraft:item/projectiles/fireball",
+		"all": "minecraft:item/projectiles/fireball"
 	},
 	"elements": [
 		{
@@ -24,7 +24,8 @@
 	],
 	"display": {
 		"ground": {
-			"translation": [0, 3, 0]
+			"translation": [0, 5.5, 0],
+			"scale": [0.75, 0.75, 0.75]
 		}
 	},
 	"groups": [
