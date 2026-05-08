@@ -22,11 +22,13 @@ rm -rf ./tmp/tmp/
 rm -rf ./tmp/README.md
 rm -rf ./tmp/publish.sh
 rm -rf ./tmp/todo.txt
-rm -rf ./tmp/LICENSE
 rm -rf ./tmp/.git/
 rm -rf ./tmp/.gitignore
 # i know it doesnt make sense to have this entry, but i do keep the original pack just in case i need assets from there
 rm -rf ./tmp/original/
+
+# renames license in the pack as a text file (the original name doesnt really fit in my eyes)
+mv ./tmp/LICENSE ./tmp/License.txt
 
 # i only have 7zip install on my system, so ill use that for the archive
 # in order for the file to be read by minecraft, i have to cd into the temporary folder

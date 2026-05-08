@@ -73,7 +73,7 @@ enlarged raven parrot beak because CEM doesnt support decimals in their cube siz
 
 skipped cat and dog renames, for now
 
-outlines arent a thing due to no option to have backface culling for entities in emf, or optifine
+outlines arent a thing due to no option to have backface culling for entities in emf or optifine
 -- well technically its possible to fake it, but the pack that managed to make it work (enchantment outlines by fishysalmon02, implementation by dbrighthd), used some maths, and even so, its buggy (outline is based on player pos, not camera pos, and doesnt play nice with hardcorded rotations)
 --- basically, id much rather have an official implementation, than have an implementation that kinda works, but not always, also shading, which could be problematic
 ---- ill revisit this another time though, it might be interesting
@@ -85,4 +85,10 @@ the goat himself made the spectral arrow texture, so thank him
 provided an option to straighten the 3d items, due to mods that uses the 3d person item pose, such at punchy and hmi
 
 book & quill texture has been skipped as the item texture generally uses the same colour as its gui, so no need to do anything there
+
+pack is no longer mit as that license gives waaaay too much control on what to do with the pack, and i want to atleast make sure that im creditted when applicable
+-- im not against mit, but for a resource pack, with the amount of issue that can arise with an open source project, it is done for the better
+license tldr:
+-- no stealing our work, no making money (can make monetised videos, but not anything else), no changing or removing license, can remix or change publicly if creditted, can share online
+-- i hold no rights for anything not made by me aswell
 ============================================
