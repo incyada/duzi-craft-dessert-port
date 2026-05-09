@@ -1,94 +1,50 @@
-===========================================
 1.0.0: Full release
 
-Releasing when ready
-temp note spot until changelog is written
+Releasing in May ??w??h??y??m??e??n??o??t??h??e??r?? 2026
 -----------------
-pumpkinblur doesnt seem to be able to be overriden, but set the blur value to false incase it gets fixed
+After almost 2 months of working on this (March 21-Now), i present my second longest work ever made! And its not even fully mine.
 
-3d items added by the pack uses bedrock position, otherwise, uses java
--- tried using maths to replicate, but until i found a working formula, will be doing replication instead
+Don't want to make the same very long story that i did for my passion project, so ill make a summary this time:
+-- Cakeofcraft finds the initial port made by Masaki on May 2025, tried it in July of the same year, realized how... average it was, got annoyed of the few VERY major issues, and decided to port it on his own, from scratch.
 
-torches are shaded and alpha channel had to be removed (redstone torch looks slightly different due to implementation)
-
-heart particle uses old version texture due to vanilla imitations and being unable to make a polytone version, files are present tho
-
-pale garden fog dark oak foliage color and block sounds can only be done on polytone (also, no support for 1.21.8-1.21.6 for the mod, or partial)
-
-wither particle is not implemented due to lack of polytone knowledge, may pick it up again
-
-im really not sure about projectiles, but we'll see
-
-thx vailla tweaks for the dont eat bowl and bedrock piston arm part
-
-decided to seperate all entity textures to their own folder as this pack needs to have vanilla support, and broken entity textures are not fun, may change this another time
-
-some hud textures are from my resource pack cause someone genuelly forgot (regular blinking was added by me, but might port it), did try to be faithful
-
-no pale oak pressure place cause SOMEONE forgot to make on before release the eigth version of his pack...
-
-port was made because the other port had some bugs, missing features, and the fact that it was made with a older development version while this one tries to be more faithful and only focuses on full releases
-
-dont ask me why iron blocks sounds like heavy cores, i dont know either
-
-no dragon fireball model, it is the only projectile who's model is a un changeable sprite
-
-projectiles are 3d on ground due to how 3d projectiles are rendered. they use the item sprite instead of a unique one, like in bedrock
-
-also, no projectile rotations due to the inability to do so
-
-also also, filepath is different due to how model filepaths works
-
-using my opimized arrow model cause my lord is the orginal just straight brute force
-
-lilypad uses connected textures instead of vanilla block variants due to how many variations if have to make
--- here is some quick maths: 5 lilypads x 9 flowers = 45 models (variants works with models instead of textures)
--- not fun, even if i were to optimise my workflow
-
-all entity textures are in a different folder (including the non necessary ones) in order to not make EMF a dependency of this pack
-
-snow golem's pumpkin variant is unclear on how it works, which might be why the head looks like... that
-
-reuben saddle has wings moved slightly to avoid z-fighting
-
-lower spider to not float
-
-stray emmisives were added by me so that i matched all of the other special skellies (no parched, the pack wasnt updated to 1.21.11 yet)
-
-villagers, including the zombies, uses my textures from my pack for biomes (and the java version, if it differs), as it fixes pixel inconsistency with babies, which was something that was glosed out initially, because of bedrock not showing the last 2 pixels of the villager robe, for some reason
-
-there... isnt... really a way to to detect if a villager is sleeping, i did try using the FA method, but that didnt work on me, for some reason
-
-fixed baby ashen wolf top myself, you would really notice it otherwise
-
-odd behaviour on emf 3.2 with cats, disabling compiled animations does fix it, it seems
-
-cant include melon snow golem, cause the pumkpin is an actual pumpkin, not a fake one provided by its model
-
-cant make reuben or technoblade saddle work, but the files are there just in case
-
-named cows only apply to temperate, and no jumbo rabbit due to model differences
-
-enlarged raven parrot beak because CEM doesnt support decimals in their cube sizes
-
-skipped cat and dog renames, for now
-
-outlines arent a thing due to no option to have backface culling for entities in emf or optifine
--- well technically its possible to fake it, but the pack that managed to make it work (enchantment outlines by fishysalmon02, implementation by dbrighthd), used some maths, and even so, its buggy (outline is based on player pos, not camera pos, and doesnt play nice with hardcorded rotations)
---- basically, id much rather have an official implementation, than have an implementation that kinda works, but not always, also shading, which could be problematic
----- ill revisit this another time though, it might be interesting
-
-no tiny takeover (yet), the main pack hasn't been updated yet and the current models are broken on 26.1 and above
-
-the goat himself made the spectral arrow texture, so thank him
-
-provided an option to straighten the 3d items, due to mods that uses the 3d person item pose, such at punchy and hmi
-
-book & quill texture has been skipped as the item texture generally uses the same colour as its gui, so no need to do anything there
-
-pack is no longer mit as that license gives waaaay too much control on what to do with the pack, and i want to atleast make sure that im creditted when applicable
--- im not against mit, but for a resource pack, with the amount of issue that can arise with an open source project, it is done for the better
-license tldr:
--- no stealing our work, no making money (can make monetised videos, but not anything else), no changing or removing license, can remix or change publicly if creditted, can share online
--- i hold no rights for anything not made by me aswell
+Usually, there would have features written, but instead, ill just skip straight to the notes, which goes over some design choices and quirks.
+-----------------
+NOTES:
+-----------------
+• All 3D items ported over will try to replicate their bedrock counterpart.
+-- While i tried to create a formula to make it automatic, it didnt really work, so for now, recreations will do.
+• The torch implementation (which boils down to no core shaders) has the torches shaded due to this. You really notice it on the restone torch.
+• Hearts were reverted to the previous version of the bedrock resource pack due to issues trying to make it animated. The works are still there in the "heart_animated.json" file if you want to see it.
+• While i'm aware of the lack of the wither's second phase particles, there is no way to change it, i assume.
+• A few of the HUD textures were provided by my own resource pack Cake's D°Uzi Tweaks, with some of them being changed in order to be faithful will the original pack, as my own work goes for a different style in some cases.
+• The lack of a unique pale oak pressure plate texture is NOT a mistake, but a conscious decision, as stupid as it might be.
+-- This is because SOMEONE forgot to make one when updating it for Chase The Skies...
+• Don't ask me why iron blocks sounds like heavy cores, i dont know either.
+• The dragon fireball is the only projectile to not have a 3D model. This is because it's model is not changeable through any normal means.
+• Speaking of projectiles, they appear 3D on the ground, as Java uses that model for rendering the projectile. They have been tweaked to fit in their hitbox.
+-- This limitation has the side effect that there is no way to animate the model without created a mod exclusively for that.
+• The arrow model is an optimized version of the one that i made for my resource pack "Dont have to plug again", due to the orginal literally being "1 pixel=1 cube".
+-- The spectral arrow can be more optimized though, its outline is built on top of the model instead of being remade for it.
+• It is unclear how or why Snow Golems defaults to the slime face.
+-- It is also impossible to add the hidden snow golem head due to the fact that the pumpkin is an actual pumpkin, not a fake one.
+• I Adjusted Reuben's wings when he wears a saddle in order to avoid z-fighting found in the original, that is if i can get saddled name pig variants to work.
+• Floating spiders begone
+• I added the Stray's emmisive eyes, in order to have a uniform look for all skeletons (besides the parched, as the orginal pack hasn't been properly updated to 1.21.11, which is why spears look odd form the other tools)
+• Yet another plug for my work, but this is to make baby villagers more 1:1 with their adult counterpart.
+• There... isn't really a way to detect a sleeping villager. Not even i truly know how Fresh_LX has done it...
+• The Baby Ashen Wolf texture has the top of it's head consistent, as you would notice it otherwise.
+• I enlarged the Raven Parrot's beak because CEM doesn't support decimals in their cube sizes.
+• Skipped cat and dog renames, for now.
+• Outlined mobs will sadly not be included in this port for the time being, due to EMF not including a native way of adding backface culling, which is needed for the effect to work.
+-- While i am aware of a method to fake it, it is pretty buggy, sadly.
+• No Tiny Takeover, as the pack hasnt received support for it yet.
+-- Due to this, baby mob models are disabled in 26.1 and beyond. They will remain on previous version (currently mainly 1.21.11) for the forseeable future.
+• Guess who made the spectral arrow texture. Hint: not me
+• Some mods uses the 3D person item position in first person, which cause odd looks, so an option was added to straighten all of these items in third person for these mods.
+• The book and quill's texture is skipped due to the book's colour palette following that texture.
+• While the port was intially licensed under MIT, it can cause issues when it comes to resource pack ownership.
+-- Generally, im not overly against an MIT license, but in this case, CC NY-NC-SA 4.0 with some tweaks fells more applicable.
+• For a TL;DR of the license, it boils down to this:
+-- You are prohibited from stealing this work, monetised (with some exclusion from videos and modpacks), and change or remove the license. Remixes or public tweaks are allowed, so long as we're creditted. The pack can be share online.
+-- I, however, hold no rights for anything not made by me.
 ============================================

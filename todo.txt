@@ -1,4 +1,3 @@
-23. during of after that proper docs for pack contents and git repo
 24. a suprise...
 -- what it is will be seen eventually
 25. post release, backporting (until 1.20)

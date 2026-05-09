@@ -32,13 +32,26 @@ On its own, D°Uzi Craft: Dessert Port doesn't need any mods in order to run wit
 
 However, for the full experience, you will need the following mods:
 
-<!-- this looks ugly in tis raw form -->
+<!-- 
+
+this looks ugly in tis raw form 
+
+also here are the curseforge links so that i dont have to look for them:
+
+https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric
+https://www.curseforge.com/minecraft/mc-mods/entity-model-features
+https://www.curseforge.com/minecraft/mc-mods/polytone
+https://www.curseforge.com/minecraft/mc-mods/continuity
+https://www.curseforge.com/minecraft/mc-mods/respackopts
+
+-->
 
 | Mod | Needed for: |
 | ---------- | ------------- |
 | [ETF](https://modrinth.com/mod/entitytexturefeatures) + [EMF](https://modrinth.com/mod/entity-model-features)/[Optifine](https://optifine.net/home) | All mob models and textures |
 | [Polytone](https://modrinth.com/mod/polytone) | Pale garden fog, darker roofed forest leaves and block sounds |
 | [Continuity](https://modrinth.com/mod/continuity)/[Optifine](https://optifine.net/home) | Lilypad variants (see FAQ as to why) |
+| [Respackopts](https://modrinth.com/mod/respackopts) | Option to straighten 3D items in third person |
 
 ## FAQ:
 
@@ -49,17 +62,25 @@ However, for the full experience, you will need the following mods:
   - There are 5 lilypad variants and 9 lilypad flower variants. Multiplying them gives 45 different models. Add onto the fact that each texture has its own weight, and you can see why this was done.
 - Q: Why are the cats broken?
 - A: This seems to be more of an EMF thing than a bug by this pack. Downgrading to any version before 3.2 (if it hasnt been fixed) or disabling compiled animations will prevent this.
+- Q: Interesting pack name... Why is that?
+- A: Why are you- anyway, its mostly a play of words.
+  - The port was initially called "Community port", but it doesnt make sense if the community is one guy.
+  - "Cake's port" is stagnant, as I used my own name a lot for my packs.
+  - And since cake is technically a dessert, it is a way of referencing myself indirectly.
+- Q: Why do all entity textures, including working ones, require ETF and EMF?
+- A: Again, this resource pack works with vanilla clients, so using a texture that is scaled differently could cause issues. Plus, it makes all entity changes consistent if those mods are installed.
 - Q: Isn't there already a java port?
 - A: You mean [this one?](https://modrinth.com/resourcepack/duzi-craft-(java-edition)) I know about it, but some of its shortcomings have influenced my decision to make this.
-   - For example: Many of the mobs have broken models/missing parts, so this pack fixes that.
-   - Another one: Instead of using a stable release, 
-   - None of its assets have been used to make this port, all of it has been made from scratch, as i figured it would be alot better to do so that way, than to fix it.
+    - For example: Many of the mobs have broken models/missing parts, so this pack fixes that.
+    - Another one: Instead of using a stable release, it used a closed, unfinished version, which caused inconsistencies with the original pack.
+    - None of its assets have been used to make this port, all of it has been made from scratch, as i figured it would be alot better to do so that way, than to fix it.
 
 ## License
 This resource pack is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1) license. Some things, such as content creation, are excluded from certain parts of this license. For more info, view the license document provided in this [Git repo.](https://github.com/incyada/duzi-craft-dessert-port/blob/main/LICENSE)
 
 ## Special thanks:
 
+- Itsme64: Automating resource pack converting for basic features
 - D°Uzi: Original creator of D°Uzi Craft
 - Vanilla Tweaks: Removed Bowl eating and Bedrock piston arm
 - Traben: Creator of EMF and CEM
