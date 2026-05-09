@@ -2,6 +2,8 @@
 
 Releasing in May ??w??h??y??m??e??n??o??t??h??e??r?? 2026
 -----------------
+NOTICE: MAKE SURE TO DISABLE COMPILED ANIMATIONS IN EMF TO AVOID ANIMATION ISSUE UNTIL ITS FIXED!!!
+
 After almost 2 months of working on this (March 21-Now), i present my second longest work ever made! And its not even fully mine.
 
 Don't want to make the same very long story that i did for my passion project, so ill make a summary this time:
