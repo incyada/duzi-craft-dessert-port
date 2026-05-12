@@ -22,7 +22,7 @@ The goal of this project is to ensure that players from both Java and Bedrock ca
 7. Baby variants for every mobs that has one, look at their adorable faces!!!!!!!! (but not in a weird way)*
 > - This only applies to versions before 26.1.
 8. Variations for some blocks.
-9. Unique for the pale garden.
+9. Unique, and more dense fog for the pale garden.
 10. Double slab textures for most slabs, which creates room for more creativity!*
 ![](https://i.imgur.com/aGb7Y3q.gif)
 > - this gif is outdated by 3 years
